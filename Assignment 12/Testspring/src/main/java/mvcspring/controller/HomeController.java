@@ -31,7 +31,7 @@ public class HomeController {
     }
     @RequestMapping("/help")
     public ModelAndView help() {
-    	System.out.println("this is  help controller");
+    	System.out.println("Help controller");
     	ModelAndView model=new ModelAndView();
     	model.addObject("name", "Ankita Gupta");
     	model.addObject("id", 56544);
