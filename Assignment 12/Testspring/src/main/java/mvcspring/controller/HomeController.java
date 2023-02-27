@@ -15,7 +15,7 @@ public class HomeController {
 	public String home(Model model) {
     	System.out.println("this is index.jsp");
     	model.addAttribute("name","Ankita Gupta");
-    	model.addAttribute("id",8873);
+    	model.addAttribute("id",45435);
     	List<String> friends=new ArrayList<String>();
     	friends.add("Ankita");
     	friends.add("Shruti");
