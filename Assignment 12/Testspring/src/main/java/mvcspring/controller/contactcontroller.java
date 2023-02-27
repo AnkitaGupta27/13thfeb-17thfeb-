@@ -18,8 +18,8 @@ public class contactcontroller {
 	private UserService userService;
     @ModelAttribute
 	public void CommonModel(Model m) {
-    	m.addAttribute("title","This is Registration Page");
-		m.addAttribute("desc","created By Mujeeb Tarry");
+    	m.addAttribute("title","Registration Page");
+		m.addAttribute("desc","created By Ankita Gupta");
 	}
 	@RequestMapping("/contact")
 	public String show(Model m) {
@@ -32,7 +32,7 @@ public class contactcontroller {
 	{    
 		System.out.println(user);
 		int createUser = this.userService.CreateUser(user);
-		model.addAttribute("msg", "User has been added with id "+createUser);
+		model.addAttribute("msg", "User with id "+createUser+"has been added ");
 		return "success";
 		
 	}
@@ -47,25 +47,4 @@ public class contactcontroller {
 	
 	
 
-	/*
-	 * @RequestMapping(path="/processform" ,method = RequestMethod.POST) public
-	 * String helper(@RequestParam("email")String email,
-	 * 
-	 * @RequestParam("username")String Username,
-	 * 
-	 * @RequestParam("password")String password, Model model) { User user=new
-	 * User(); user.setEmail(email); user.setUsername(Username);
-	 * user.setPassword(password);
-	 * 
-	 * System.out.println(user);
-	 * 
-	 * 
-	 * model.addAttribute("Email",email); model.addAttribute("username", Username);
-	 * model.addAttribute("Password", password);
-	 * 
-	 * 
-	 * model.addAttribute("user" ,user); return "success";
-	 * 
-	 * }
-	 */
 }
