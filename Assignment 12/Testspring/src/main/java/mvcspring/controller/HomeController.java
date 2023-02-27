@@ -14,12 +14,12 @@ public class HomeController {
     @RequestMapping("/home")
 	public String home(Model model) {
     	System.out.println("this is index.jsp");
-    	model.addAttribute("name","Mujeeb Ahmad Tarry");
+    	model.addAttribute("name","Ankita Gupta");
     	model.addAttribute("id",8873);
     	List<String> friends=new ArrayList<String>();
-    	friends.add("Mujeeb");
-    	friends.add("Fazil");
-    	friends.add("Basit");
+    	friends.add("Ankita");
+    	friends.add("Shruti");
+    	friends.add("Surbhi");
     	model.addAttribute("f",friends);
     	
 		return "index";	
@@ -33,7 +33,7 @@ public class HomeController {
     public ModelAndView help() {
     	System.out.println("this is  help controller");
     	ModelAndView model=new ModelAndView();
-    	model.addObject("name", "Mujeeb Tarry");
+    	model.addObject("name", "Ankita Gupta");
     	model.addObject("id", 6757);
     	
     LocalDateTime now =LocalDateTime.now();
