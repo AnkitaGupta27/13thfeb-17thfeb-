@@ -14,7 +14,7 @@ public class Recontroller {
 	
 	@RequestMapping("/enjoy")
 	public String two() {
-		System.out.println("This is two method");
+		System.out.println("This is two");
 		return "redirect:/contact";
 	}
 }
