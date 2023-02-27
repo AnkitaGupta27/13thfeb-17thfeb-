@@ -40,10 +40,10 @@ public class HomeController {
     model.addObject("Date", now);
     
     List<Integer> list= new ArrayList<>();
-    list.add(9589);
-    list.add(8748);
-    list.add(7394);
-    list.add(7847);
+    list.add(5654);
+    list.add(46333);
+    list.add(5654643);
+    list.add(643543543);
     model.addObject("list", list);
     
     	model.setViewName("/help");
