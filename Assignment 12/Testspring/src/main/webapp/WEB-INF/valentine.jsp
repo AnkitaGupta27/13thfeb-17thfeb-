@@ -30,7 +30,7 @@
     			<select id="gifts" name="gifts" multiple>
 		            <option value="chocolate">Chocolate</option>
 		            <option value="flowers">Flowers</option>
-		            <option value="jewelry">Jewelry</option>
+		            <option value="jewelry">Jewellry</option>
         		</select>
         </td>
         </tr>
